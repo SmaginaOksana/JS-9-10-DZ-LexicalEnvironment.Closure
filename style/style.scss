@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container-task1 {
+  width: 70%;
+  margin: auto;
+  font-size: 20px;
+  h1 {
+    font-size: 50px;
+  }
+  form {
+    margin-bottom: 20px;
+    input {
+      padding: 10px 20px;
+      color: grey;
+      &:first-child {
+        border-radius: 5px 0 0 5px;
+        border: 1px rgb(182, 177, 177) solid;
+        width: 80%;
+        &:focus {
+          border: 1px rgb(75, 115, 164) solid;
+          outline: 5px rgb(158, 178, 229) solid;
+        }
+      }
+      &:last-child {
+        border-radius: 0 5px 5px 0;
+        background-color: white;
+        border: 1px rgb(54, 53, 53) solid;
+        width: 19%;
+      }
+    }
+  }
+  ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    li {
+      list-style-type: none;
+      width: 100%;
+      padding: 10px 20px;
+      color: black;
+      border: 1px rgb(182, 177, 177) solid;
+      .check,
+      p,
+      .btnRemove {
+        padding: 10px 20px;
+        border-radius: 10px;
+        display: inline-block;
+      }
+      .check {
+        &:focus {
+          outline: 5px rgb(158, 178, 229) solid;
+        }
+      }
+      p {
+        line-height: 0;
+      }
+      .btnRemove {
+        border: 1px red solid;
+        background-color: transparent;
+        color: red;
+      }
+    }
+  }
+}
+.container-task3 {
+  font-family: "Times New Roman", Times, serif;
+  aside {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: rgb(19, 19, 19);
+    transition: 0.7s;
+    .icon {
+      width: 45px;
+      height: 55px;
+      background-color: white;
+      border: 1px black solid;
+      position: absolute;
+      top: 0;
+      right: 30px;
+      img {
+        width: 20px;
+      }
+    }
+    nav {
+      padding-top: 100px;
+      padding-left: 40px;
+      a {
+        font-size: 30px;
+        text-decoration: none;
+        color: white;
+        opacity: 0.5;
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  main {
+    margin-left: 300px;
+    padding-left: 30px;
+    font-weight: 500;
+    transition: 0.7s;
+    .burger {
+      width: 55px;
+      height: 55px;
+      background-color: black;
+      margin-bottom: 40px;
+      img {
+        width: 25px;
+        vertical-align: middle;
+      }
+    }
+    h1 {
+      font-size: 50px;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+  .none {
+    display: none;
+  }
+}
+.wrapper {
+  background-color: rgb(247, 245, 245);
+  padding-bottom: 200px;
+  .container-task4 {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    a {
+      text-decoration: none;
+      font-size: 15px;
+      cursor: pointer;
+      color: black;
+    }
+    .none {
+      display: none;
+    }
+    header {
+      padding: 20px 40px;
+      height: 70px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      button {
+        cursor: pointer;
+        border: none;
+        img {
+          width: 25px;
+        }
+      }
+      nav {
+        a {
+          margin-right: 10px;
+        }
+      }
+    }
+    main {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      border-radius: 8px;
+      padding-bottom: 200px;
+      .link {
+        flex-basis: 35%;
+        a {
+          font-size: 25px;
+          font-weight: 700;
+        }
+      }
+      .city {
+        flex-basis: 65%;
+        display: flex;
+        justify-content: space-around;
+        img {
+          width: 90%;
+        }
+      }
+    }
+    .menu {
+      width: 500px;
+      border: 1px solid rgb(230, 227, 227);
+      background-color: rgb(247, 245, 245);
+      position: fixed;
+      top: 70px;
+      border-radius: 8px;
+      height: 410px;
+      .form {
+        height: 20%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10px 20px 40px;
+        input {
+          background-color: rgb(247, 245, 245);
+          border: none;
+          &:focus {
+            outline: none;
+            border: none;
+          }
+        }
+        ::placeholder {
+          color: rgb(207, 201, 201);
+        }
+        img {
+          width: 30px;
+        }
+      }
+      nav {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px 40px;
+        border-top: 1px solid rgb(203, 201, 201);
+        a {
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+}
