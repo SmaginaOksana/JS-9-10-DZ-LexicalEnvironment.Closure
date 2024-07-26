@@ -69,7 +69,7 @@
 }
 .container-task3 aside {
   position: fixed;
-  width: 300px;
+  width: 0;
   height: 100%;
   overflow-x: hidden;
   background-color: rgb(19, 19, 19);
@@ -100,7 +100,6 @@
   margin-bottom: 10px;
 }
 .container-task3 main {
-  margin-left: 300px;
   padding-left: 30px;
   font-weight: 500;
   transition: 0.7s;
